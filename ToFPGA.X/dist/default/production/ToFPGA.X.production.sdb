@@ -1,0 +1,231 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F690 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"58 C:\workspace\Test690\ToFPGA.X\newmain.c
+[v _initQueue initQueue `(v  1 e 1 0 ]
+"64
+[v _isQueueFull isQueueFull `(i  1 e 2 0 ]
+"68
+[v _isQueueEmpty isQueueEmpty `(i  1 e 2 0 ]
+"72
+[v _enqueue enqueue `(v  1 e 1 0 ]
+"45
+[s S22 . 2 `us 1 data 2 0 ]
+"80
+[v _dequeue dequeue `(S22  1 e 2 0 ]
+"91
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"45
+[s S22 . 2 `us 1 data 2 0 ]
+"104
+[v _ADC_Read ADC_Read `(S22  1 e 2 0 ]
+"112
+[v _sendParallelData sendParallelData `(v  1 e 1 0 ]
+"125
+[v _main main `(v  1 e 1 0 ]
+[s S156 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"230 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f690.h
+[u S162 . 1 `S156 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES162  1 e 1 @6 ]
+[s S135 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"272
+[u S144 . 1 `S135 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES144  1 e 1 @7 ]
+"1073
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S69 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 VCFG 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"1110
+[s S75 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S82 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S85 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S88 . 1 `S69 1 . 1 0 `S75 1 . 1 0 `S82 1 . 1 0 `S85 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES88  1 e 1 @31 ]
+[s S31 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1260
+[u S38 . 1 `S31 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES38  1 e 1 @133 ]
+[s S192 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1309
+[u S198 . 1 `S192 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES198  1 e 1 @134 ]
+[s S171 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1351
+[u S180 . 1 `S171 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES180  1 e 1 @135 ]
+"2594
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S113 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 ADCS 1 0 :3:4 
+]
+"2618
+[s S116 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+]
+[u S121 . 1 `S113 1 . 1 0 `S116 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES121  1 e 1 @159 ]
+"3002
+[v _ANSEL ANSEL `VEuc  1 e 1 @286 ]
+[s S48 . 1 `uc 1 ANS0 1 0 :1:0 
+`uc 1 ANS1 1 0 :1:1 
+`uc 1 ANS2 1 0 :1:2 
+`uc 1 ANS3 1 0 :1:3 
+`uc 1 ANS4 1 0 :1:4 
+`uc 1 ANS5 1 0 :1:5 
+`uc 1 ANS6 1 0 :1:6 
+`uc 1 ANS7 1 0 :1:7 
+]
+"3019
+[u S57 . 1 `S48 1 . 1 0 ]
+[v _ANSELbits ANSELbits `VES57  1 e 1 @286 ]
+"3064
+[v _ANSELH ANSELH `VEuc  1 e 1 @287 ]
+"125 C:\workspace\Test690\ToFPGA.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+[s S22 . 2 `us 1 data 2 0 ]
+"153
+[v main@data data `S22  1 a 2 8 ]
+[s S22 . 2 `us 1 data 2 0 ]
+"148
+[v main@adcValue adcValue `S22  1 a 2 6 ]
+[s S22 . 2 `us 1 data 2 0 ]
+"127
+[s S24 . 38 `[16]S22 1 buffer 32 0 `i 1 head 2 32 `i 1 tail 2 34 `i 1 count 2 36 ]
+[v main@adcQueue adcQueue `S24  1 a 38 10 ]
+"164
+} 0
+"112
+[v _sendParallelData sendParallelData `(v  1 e 1 0 ]
+{
+[v sendParallelData@data data `us  1 p 2 0 ]
+"123
+} 0
+"58
+[v _initQueue initQueue `(v  1 e 1 0 ]
+{
+[s S22 . 2 `us 1 data 2 0 ]
+[s S24 . 38 `[16]S22 1 buffer 32 0 `i 1 head 2 32 `i 1 tail 2 34 `i 1 count 2 36 ]
+[v initQueue@q q `*.4S24  1 a 1 wreg ]
+[v initQueue@q q `*.4S24  1 a 1 wreg ]
+[v initQueue@q q `*.4S24  1 a 1 0 ]
+"62
+} 0
+"72
+[v _enqueue enqueue `(v  1 e 1 0 ]
+{
+[s S22 . 2 `us 1 data 2 0 ]
+[s S24 . 38 `[16]S22 1 buffer 32 0 `i 1 head 2 32 `i 1 tail 2 34 `i 1 count 2 36 ]
+[v enqueue@q q `*.4S24  1 a 1 wreg ]
+[v enqueue@q q `*.4S24  1 a 1 wreg ]
+[v enqueue@data data `S22  1 p 2 7 ]
+[v enqueue@q q `*.4S24  1 a 1 9 ]
+"78
+} 0
+"64
+[v _isQueueFull isQueueFull `(i  1 e 2 0 ]
+{
+[s S22 . 2 `us 1 data 2 0 ]
+[s S24 . 38 `[16]S22 1 buffer 32 0 `i 1 head 2 32 `i 1 tail 2 34 `i 1 count 2 36 ]
+[v isQueueFull@q q `*.4S24  1 a 1 wreg ]
+[v isQueueFull@q q `*.4S24  1 a 1 wreg ]
+[v isQueueFull@q q `*.4S24  1 a 1 6 ]
+"66
+} 0
+"45
+[s S22 . 2 `us 1 data 2 0 ]
+"80
+[v _dequeue dequeue `(S22  1 e 2 0 ]
+{
+[s S24 . 38 `[16]S22 1 buffer 32 0 `i 1 head 2 32 `i 1 tail 2 34 `i 1 count 2 36 ]
+[v dequeue@q q `*.4S24  1 a 1 wreg ]
+"81
+[v dequeue@data data `S22  1 a 2 9 ]
+"80
+[v dequeue@q q `*.4S24  1 a 1 wreg ]
+[v dequeue@F1642 F1642 `S22  1 s 2 F1642 ]
+[v dequeue@q q `*.4S24  1 a 1 11 ]
+"88
+} 0
+"68
+[v _isQueueEmpty isQueueEmpty `(i  1 e 2 0 ]
+{
+[s S22 . 2 `us 1 data 2 0 ]
+[s S24 . 38 `[16]S22 1 buffer 32 0 `i 1 head 2 32 `i 1 tail 2 34 `i 1 count 2 36 ]
+[v isQueueEmpty@q q `*.4S24  1 a 1 wreg ]
+[v isQueueEmpty@q q `*.4S24  1 a 1 wreg ]
+[v isQueueEmpty@q q `*.4S24  1 a 1 6 ]
+"70
+} 0
+"45
+[s S22 . 2 `us 1 data 2 0 ]
+"104
+[v _ADC_Read ADC_Read `(S22  1 e 2 0 ]
+{
+"107
+[v ADC_Read@result result `S22  1 a 2 2 ]
+"110
+} 0
+"91
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"101
+} 0
